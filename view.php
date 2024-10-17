@@ -61,7 +61,7 @@
             <tr>
                 <td><?= htmlspecialchars($entry['student']) ?></td>
                 <td><?= htmlspecialchars($entry['email']) ?></td>
-                <td><?= htmlspecialchars($entry['examDate']) ?></td>
+                <td><?= htmlspecialchars(date('d.m.Y', strtotime($entry['examDate']))) ?></td>
                 <td><?= htmlspecialchars($entry['subject']) ?></td>
                 <td><?= htmlspecialchars($entry['grade']) ?></td>
             </tr>
